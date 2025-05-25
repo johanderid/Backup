@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "../bitcoin_trading_signals"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "../Intune"
+		},
+		{
+			"path": "../Compound"
+		}
+	],
+	"settings": {}
+}

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compound Interest Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            padding: 20px;
+        }
+        .calculator-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .result {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #e9ecef;
+            border-radius: 5px;
+            display: none;
+        }
+        .table-container {
+            margin-top: 20px;
+            max-height: 500px;
+            overflow-y: auto;
+            border: 1px solid #dee2e6;
+            border-radius: 5px;
+        }
+        .table {
+            margin-bottom: 0;
+        }
+        .table th {
+            position: sticky;
+            top: 0;
+            background-color: #f8f9fa;
+            z-index: 1;
+            border-bottom: 2px solid #dee2e6;
+        }
+        .summary-box {
+            background-color: #e9ecef;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="calculator-container">
+            <h2 class="text-center mb-4">Compound Interest Calculator</h2>
+            <form id="calculatorForm">
+                <div class="mb-3">
+                    <label for="principal" class="form-label">Initial Investment ($)</label>
+                    <input type="number" class="form-control" id="principal" required min="0" step="0.01">
+                </div>
+                <div class="mb-3">
+                    <label for="interest_rate" class="form-label">Annual Interest Rate (%)</label>
+                    <input type="number" class="form-control" id="interest_rate" required min="0" step="0.01">
+                </div>
+                <div class="mb-3">
+                    <label for="contribution" class="form-label">Regular Contribution ($)</label>
+                    <input type="number" class="form-control" id="contribution" required min="0" step="0.01">
+                </div>
+                <div class="mb-3">
+                    <label for="frequency" class="form-label">Contribution Frequency (per year)</label>
+                    <select class="form-select" id="frequency" required>
+                        <option value="12">Monthly (12/year)</option>
+                        <option value="26">Bi-weekly (26/year)</option>
+                        <option value="52">Weekly (52/year)</option>
+                        <option value="4">Quarterly (4/year)</option>
+                        <option value="1">Annually (1/year)</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="goal" class="form-label">Investment Goal ($)</label>
+                    <input type="number" class="form-control" id="goal" required min="0" step="0.01">
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Calculate</button>
+            </form>
+            <div class="result" id="result">
+                <div class="summary-box">
+                    <h4 class="text-center mb-3">Results Summary</h4>
+                    <p class="text-center mb-0" id="resultText"></p>
+                </div>
+                
+                <h5 class="mb-3">Monthly Breakdown</h5>
+                <div class="table-container">
+                    <table class="table table-striped table-hover">
+                        <thead>
+                            <tr>
+                                <th>Month</th>
+                                <th>Starting Balance</th>
+                                <th>Interest Earned</th>
+                                <th>Contribution</th>
+                                <th>Ending Balance</th>
+                            </tr>
+                        </thead>
+                        <tbody id="monthlyDetails">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function formatCurrency(amount) {
+            return new Intl.NumberFormat('en-US', {
+                style: 'currency',
+                currency: 'USD'
+            }).format(amount);
+        }
+
+        document.getElementById('calculatorForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            const data = {
+                principal: document.getElementById('principal').value,
+                interest_rate: document.getElementById('interest_rate').value,
+                contribution: document.getElementById('contribution').value,
+                frequency: document.getElementById('frequency').value,
+                goal: document.getElementById('goal').value
+            };
+
+            try {
+                const response = await fetch('/calculate', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(data)
+                });
+                
+                const result = await response.json();
+                const resultElement = document.getElementById('result');
+                const resultText = document.getElementById('resultText');
+                const monthlyDetailsTable = document.getElementById('monthlyDetails');
+                
+                resultElement.style.display = 'block';
+                resultText.innerHTML = `It will take approximately ${result.years} years to reach your investment goal of ${formatCurrency(data.goal)}.`;
+                
+                // Clear previous table content
+                monthlyDetailsTable.innerHTML = '';
+                
+                // Add monthly details to table
+                result.monthly_details.forEach(month => {
+                    const row = document.createElement('tr');
+                    row.innerHTML = `
+                        <td>${month.month}</td>
+                        <td>${formatCurrency(month.starting_balance)}</td>
+                        <td>${formatCurrency(month.interest_earned)}</td>
+                        <td>${formatCurrency(month.contribution)}</td>
+                        <td>${formatCurrency(month.ending_balance)}</td>
+                    `;
+                    monthlyDetailsTable.appendChild(row);
+                });
+            } catch (error) {
+                console.error('Error:', error);
+                alert('An error occurred while calculating.');
+            }
+        });
+    </script>
+</body>
+</html>

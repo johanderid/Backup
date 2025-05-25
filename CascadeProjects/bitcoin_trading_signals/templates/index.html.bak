@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Trading Signals</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --bs-body-bg: #1a1d20;
+            --bs-body-color: #e9ecef;
+            --bs-tertiary-bg: #2c3034;
+        }
+        
+        body {
+            background-color: var(--bs-body-bg);
+            color: var(--bs-body-color);
+        }
+        
+        .crypto-card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            margin-bottom: 2rem;
+            background: var(--bs-tertiary-bg);
+        }
+        
+        .card-header {
+            background-color: rgba(255, 255, 255, 0.05);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 15px 15px 0 0 !important;
+            padding: 1.5rem;
+        }
+        
+        .card-body {
+            padding: 1.5rem;
+        }
+        
+        .signal-badge {
+            font-size: 1rem;
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+        }
+        
+        .price-change-positive {
+            color: #00ff9d;
+        }
+        
+        .price-change-negative {
+            color: #ff4d4d;
+        }
+        
+        .table {
+            margin-bottom: 0;
+            color: var(--bs-body-color);
+        }
+        
+        .table th {
+            font-weight: 600;
+            color: #adb5bd;
+        }
+        
+        .news-section {
+            margin-top: 3rem;
+        }
+        
+        .news-card {
+            transition: transform 0.2s;
+        }
+        
+        .news-card:hover {
+            transform: translateY(-3px);
+        }
+        
+        .crypto-icon {
+            font-size: 1.5rem;
+            margin-right: 0.5rem;
+        }
+        
+        .table-hover tbody tr:hover {
+            background-color: rgba(255, 255, 255, 0.05) !important;
+        }
+        
+        .data-table th {
+            background-color: rgba(255, 255, 255, 0.05);
+        }
+        
+        .last-updated {
+            font-size: 0.8rem;
+            color: #adb5bd;
+        }
+        
+        .list-group-item {
+            background-color: var(--bs-tertiary-bg);
+            border-color: rgba(255, 255, 255, 0.1);
+            color: var(--bs-body-color);
+        }
+        
+        .list-group-item:hover {
+            background-color: rgba(255, 255, 255, 0.05);
+            color: var(--bs-body-color);
+        }
+        
+        .text-muted {
+            color: #adb5bd !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="container py-4">
+        <h1 class="text-center mb-4">Cryptocurrency Trading Signals</h1>
+        
+        {% for symbol, data in analysis.items() %}
+            {% if data.signal %}
+            <div class="crypto-card">
+                <div class="card-header">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h2 class="mb-0">
+                            {% if 'BTC' in symbol %}
+                            <i class="fab fa-bitcoin crypto-icon text-warning"></i>
+                            {% else %}
+                            <i class="fab fa-ethereum crypto-icon text-info"></i>
+                            {% endif %}
+                            {{ symbol }}
+                        </h2>
+                        <span class="signal-badge badge {% if data.signal == 'BUY' %}bg-success{% elif data.signal == 'SELL' %}bg-danger{% else %}bg-warning{% endif %}">
+                            {{ data.signal }}
+                        </span>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-hover data-table">
+                            <thead>
+                                <tr>
+                                    <th>Metric</th>
+                                    <th>Price</th>
+                                    <th>Change</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Current</td>
+                                    <td>${{ '{:,.2f}'.format(data.current) if data.current else '0.00' }}</td>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <td>Last Week</td>
+                                    <td>${{ '{:,.2f}'.format(data.last_week) if data.last_week else '0.00' }}</td>
+                                    <td class="{{ 'price-change-positive' if data.weekly_change and data.weekly_change > 0 else 'price-change-negative' }}">
+                                        {{ '{:+.2f}%'.format(data.weekly_change) if data.weekly_change else '0.00%' }}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Last Month</td>
+                                    <td>${{ '{:,.2f}'.format(data.last_month) if data.last_month else '0.00' }}</td>
+                                    <td class="{{ 'price-change-positive' if data.monthly_change and data.monthly_change > 0 else 'price-change-negative' }}">
+                                        {{ '{:+.2f}%'.format(data.monthly_change) if data.monthly_change else '0.00%' }}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Last Year</td>
+                                    <td>${{ '{:,.2f}'.format(data.last_year) if data.last_year else '0.00' }}</td>
+                                    <td class="{{ 'price-change-positive' if data.yearly_change and data.yearly_change > 0 else 'price-change-negative' }}">
+                                        {{ '{:+.2f}%'.format(data.yearly_change) if data.yearly_change else '0.00%' }}
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    {% if data.detailed_sentiment %}
+                    <div class="row mt-4">
+                        {% if data.detailed_sentiment.market_summary %}
+                        <div class="col-md-6">
+                            <div class="table-responsive">
+                                <table class="table table-hover data-table">
+                                    <thead>
+                                        <tr>
+                                            <th colspan="2">Market Summary</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        {% for line in data.detailed_sentiment.market_summary.split('\n') %}
+                                        {% set parts = line.split(': ') %}
+                                        <tr>
+                                            <td>{{ parts[0] }}</td>
+                                            <td>{{ parts[1] if parts|length > 1 else '' }}</td>
+                                        </tr>
+                                        {% endfor %}
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        {% endif %}
+
+                        {% if data.detailed_sentiment.technical_indicators %}
+                        <div class="col-md-6">
+                            <div class="table-responsive">
+                                <table class="table table-hover data-table">
+                                    <thead>
+                                        <tr>
+                                            <th colspan="2">Technical Analysis</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        {% for line in data.detailed_sentiment.technical_indicators.split('\n')[1:] %}
+                                        {% set parts = line.split(': ') %}
+                                        <tr>
+                                            <td>{{ parts[0] }}</td>
+                                            <td>{{ parts[1] if parts|length > 1 else '' }}</td>
+                                        </tr>
+                                        {% endfor %}
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        {% endif %}
+                    </div>
+                    {% endif %}
+                    
+                    <div class="last-updated mt-3">
+                        Last updated: {{ data.timestamp }}
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+        {% endfor %}
+
+        <!-- News Section -->
+        <div class="news-section">
+            <h2 class="mb-4">Latest Cryptocurrency News</h2>
+            {% for symbol, data in analysis.items() %}
+                {% if 'BTC/USD' in symbol or 'ETH/USD' in symbol %}
+                    {% if data.detailed_sentiment and data.detailed_sentiment.latest_news %}
+                        <div class="crypto-card news-card mb-4">
+                            <div class="card-header">
+                                <h3 class="mb-0">
+                                    {% if 'BTC' in symbol %}
+                                    <i class="fab fa-bitcoin crypto-icon text-warning"></i>
+                                    {% else %}
+                                    <i class="fab fa-ethereum crypto-icon text-info"></i>
+                                    {% endif %}
+                                    {{ symbol }} News
+                                </h3>
+                            </div>
+                            <div class="card-body p-0">
+                                <div class="list-group list-group-flush">
+                                    {% for news in data.detailed_sentiment.latest_news %}
+                                    <a href="{{ news.url }}" target="_blank" class="list-group-item list-group-item-action">
+                                        <div class="d-flex w-100 justify-content-between">
+                                            <h5 class="mb-1">
+                                                <i class="fas fa-newspaper me-2"></i>
+                                                {{ news.title }}
+                                            </h5>
+                                            <small class="text-muted">{{ news.source }}</small>
+                                        </div>
+                                        <small class="text-muted">{{ news.timestamp }}</small>
+                                    </a>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                        </div>
+                    {% endif %}
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

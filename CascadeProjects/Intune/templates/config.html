@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configure Azure AD Credentials</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .config-card {
+            max-width: 800px;
+            margin: 2rem auto;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .help-text {
+            font-size: 0.875rem;
+            color: #6c757d;
+            margin-top: 0.25rem;
+        }
+        .alert {
+            margin-bottom: 1rem;
+        }
+        .import-export-section {
+            background-color: rgba(0,0,0,0.05);
+            padding: 1rem;
+            border-radius: 0.375rem;
+            margin-bottom: 2rem;
+        }
+        .btn-file {
+            position: relative;
+            overflow: hidden;
+        }
+        .btn-file input[type=file] {
+            position: absolute;
+            top: 0;
+            right: 0;
+            min-width: 100%;
+            min-height: 100%;
+            font-size: 100px;
+            text-align: right;
+            filter: alpha(opacity=0);
+            opacity: 0;
+            outline: none;
+            background: white;
+            cursor: inherit;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container py-4">
+        <div class="card config-card">
+            <div class="card-header">
+                <h2 class="mb-0">Azure AD Configuration</h2>
+            </div>
+            <div class="card-body">
+                {% with messages = get_flashed_messages(with_categories=true) %}
+                    {% if messages %}
+                        {% for category, message in messages %}
+                            <div class="alert alert-{{ 'success' if category == 'success' else 'danger' }}" role="alert">
+                                {{ message }}
+                            </div>
+                        {% endfor %}
+                    {% endif %}
+                {% endwith %}
+
+                <!-- Import/Export Section -->
+                <div class="import-export-section">
+                    <h5 class="mb-3">Import/Export Configuration</h5>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <form method="POST" enctype="multipart/form-data">
+                                <span class="btn btn-secondary btn-file">
+                                    Import Configuration
+                                    <input type="file" name="import_config" accept=".json" 
+                                           onchange="this.form.submit()">
+                                </span>
+                            </form>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <a href="{{ url_for('export_config') }}" class="btn btn-secondary">
+                                Export Configuration
+                            </a>
+                        </div>
+                    </div>
+                    <div class="help-text">
+                        Import a previously exported configuration file or export your current configuration for backup.
+                        Exported configurations are encrypted for security.
+                    </div>
+                </div>
+
+                <form method="POST" action="{{ url_for('config') }}">
+                    <div class="mb-4">
+                        <h5>Azure AD App Registration Details</h5>
+                        <p class="help-text">
+                            These credentials are required to connect to Microsoft Graph API. You can find them in your Azure Portal under
+                            Azure Active Directory > App registrations > Your App > Overview and Certificates & secrets.
+                        </p>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="tenant_id" class="form-label">Tenant ID</label>
+                        <input type="text" class="form-control" id="tenant_id" name="tenant_id" 
+                               value="{{ credentials.tenant_id }}" required>
+                        <div class="help-text">
+                            Found in Azure AD > Overview > Tenant ID
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="client_id" class="form-label">Client ID (Application ID)</label>
+                        <input type="text" class="form-control" id="client_id" name="client_id" 
+                               value="{{ credentials.client_id }}" required>
+                        <div class="help-text">
+                            Found in Azure AD > App registrations > Your App > Overview > Application (client) ID
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="client_secret" class="form-label">Client Secret</label>
+                        <input type="password" class="form-control" id="client_secret" name="client_secret" 
+                               value="{{ credentials.client_secret }}" required>
+                        <div class="help-text">
+                            Found in Azure AD > App registrations > Your App > Certificates & secrets > Client secrets
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-between align-items-center">
+                        <button type="submit" class="btn btn-primary">Save Configuration</button>
+                        {% if credentials.tenant_id %}
+                        <form action="{{ url_for('clear_config') }}" method="POST" class="d-inline">
+                            <button type="submit" class="btn btn-outline-danger">Clear Configuration</button>
+                        </form>
+                        {% endif %}
+                    </div>
+                </form>
+
+                <hr class="my-4">
+
+                <div class="setup-guide">
+                    <h5>Setup Guide</h5>
+                    <ol class="setup-steps">
+                        <li class="mb-2">
+                            Go to <a href="https://portal.azure.com" target="_blank">Azure Portal</a> and sign in
+                        </li>
+                        <li class="mb-2">
+                            Navigate to Azure Active Directory > App registrations > New registration
+                        </li>
+                        <li class="mb-2">
+                            Register your application:
+                            <ul>
+                                <li>Name: Choose a name for your app</li>
+                                <li>Supported account types: Single tenant</li>
+                                <li>Redirect URI: Leave blank</li>
+                            </ul>
+                        </li>
+                        <li class="mb-2">
+                            After registration, go to API permissions and add:
+                            <ul>
+                                <li>Device.Read.All</li>
+                                <li>DeviceManagementManagedDevices.Read.All</li>
+                            </ul>
+                        </li>
+                        <li class="mb-2">
+                            Go to Certificates & secrets > New client secret
+                        </li>
+                        <li class="mb-2">
+                            Copy the generated secret value (you won't be able to see it again)
+                        </li>
+                        <li>
+                            Enter the Tenant ID, Client ID, and Client Secret in the form above
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

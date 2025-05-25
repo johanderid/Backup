@@ -1,0 +1,690 @@
+2025-02-09 23:11:23,314 - ERROR - Error generating signal: 'STOCHRSIk_14'
+2025-02-09 23:11:23,314 - INFO - None
+2025-02-09 23:17:48,132 - ERROR - Error generating signal: 'STOCHRSIk_14'
+2025-02-09 23:17:48,132 - INFO - None
+2025-02-09 23:18:08,620 - INFO - 
+        Signal Analysis (2025-02-09 23:18:08):
+        Current Price: $95,449.90
+        Signal Strength: 2/4
+        Primary Signal: SELL
+        External Sentiment: Neutral
+        
+MODERATE SELL SIGNAL
+2025-02-09 23:19:13,145 - INFO - 
+        Signal Analysis (2025-02-09 23:19:13):
+        Current Price: $95,450.00
+        Signal Strength: 2/4
+        Primary Signal: SELL
+        External Sentiment: Neutral
+        
+MODERATE SELL SIGNAL
+2025-02-09 23:20:54,396 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-09 23:20:54,396 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-09 23:20:54,397 - INFO -  * Restarting with stat
+2025-02-09 23:20:54,923 - WARNING -  * Debugger is active!
+2025-02-09 23:20:54,933 - INFO -  * Debugger PIN: 789-166-570
+2025-02-09 23:20:56,826 - INFO - 
+        Signal Analysis (2025-02-09 23:20:56):
+        Current Price: $95,450.00
+        Signal Strength: 2/4
+        Primary Signal: SELL
+        External Sentiment: Neutral
+        
+MODERATE SELL SIGNAL
+2025-02-09 23:20:57,296 - INFO - 
+        Signal Analysis (2025-02-09 23:20:57):
+        Current Price: $95,450.00
+        Signal Strength: 2/4
+        Primary Signal: SELL
+        External Sentiment: Neutral
+        
+MODERATE SELL SIGNAL
+2025-02-09 23:23:47,716 - INFO -  * Detected change in '/Users/johan/CascadeProjects/bitcoin_trading_signals/app.py', reloading
+2025-02-09 23:23:47,925 - INFO -  * Restarting with stat
+2025-02-09 23:23:48,627 - WARNING -  * Debugger is active!
+2025-02-09 23:23:48,635 - INFO -  * Debugger PIN: 789-166-570
+2025-02-09 23:23:51,061 - INFO - 
+        Signal Analysis (2025-02-09 23:23:51):
+        Current Price: $95,665.00
+        Signal Strength: 2/4
+        Primary Signal: SELL
+        External Sentiment: Neutral
+        
+MODERATE SELL SIGNAL
+2025-02-09 23:23:54,956 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2025-02-09 23:23:54,957 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-09 23:23:54,957 - INFO -  * Restarting with stat
+2025-02-09 23:23:55,458 - WARNING -  * Debugger is active!
+2025-02-09 23:23:55,470 - INFO -  * Debugger PIN: 789-166-570
+2025-02-09 23:23:57,456 - INFO - 
+        Signal Analysis (2025-02-09 23:23:57):
+        Current Price: $95,665.00
+        Signal Strength: 2/4
+        Primary Signal: SELL
+        External Sentiment: Neutral
+        
+MODERATE SELL SIGNAL
+2025-02-09 23:23:57,975 - INFO - 
+        Signal Analysis (2025-02-09 23:23:57):
+        Current Price: $95,665.00
+        Signal Strength: 2/4
+        Primary Signal: SELL
+        External Sentiment: Neutral
+        
+MODERATE SELL SIGNAL
+2025-02-09 23:24:08,823 - INFO - 127.0.0.1 - - [09/Feb/2025 23:24:08] "GET / HTTP/1.1" 200 -
+2025-02-09 23:24:09,345 - INFO - 127.0.0.1 - - [09/Feb/2025 23:24:09] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-02-09 23:24:39,139 - INFO - 127.0.0.1 - - [09/Feb/2025 23:24:39] "GET /api/latest HTTP/1.1" 200 -
+2025-02-09 23:25:09,136 - INFO - 127.0.0.1 - - [09/Feb/2025 23:25:09] "GET /api/latest HTTP/1.1" 200 -
+2025-02-09 23:25:39,139 - INFO - 127.0.0.1 - - [09/Feb/2025 23:25:39] "GET /api/latest HTTP/1.1" 200 -
+2025-02-09 23:25:57,156 - INFO - 
+        Signal Analysis (2025-02-09 23:25:57):
+        Current Price: $95,672.90
+        Signal Strength: 2/4
+        Primary Signal: SELL
+        External Sentiment: Neutral
+        
+MODERATE SELL SIGNAL
+2025-02-09 23:26:09,137 - INFO - 127.0.0.1 - - [09/Feb/2025 23:26:09] "GET /api/latest HTTP/1.1" 200 -
+2025-02-09 23:26:39,137 - INFO - 127.0.0.1 - - [09/Feb/2025 23:26:39] "GET /api/latest HTTP/1.1" 200 -
+2025-02-09 23:26:51,405 - INFO -  * Detected change in '/Users/johan/CascadeProjects/bitcoin_trading_signals/trading_signals.py', reloading
+2025-02-09 23:26:51,765 - INFO -  * Detected change in '/Users/johan/CascadeProjects/bitcoin_trading_signals/trading_signals.py', reloading
+2025-02-09 23:26:51,804 - INFO -  * Restarting with stat
+2025-02-09 23:26:52,013 - INFO -  * Restarting with stat
+2025-02-09 23:27:38,363 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2025-02-09 23:27:38,364 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-09 23:27:38,364 - INFO -  * Restarting with stat
+2025-02-09 23:27:38,875 - WARNING -  * Debugger is active!
+2025-02-09 23:27:38,881 - INFO -  * Debugger PIN: 789-166-570
+2025-02-09 23:27:39,133 - INFO - 127.0.0.1 - - [09/Feb/2025 23:27:39] "GET /api/latest HTTP/1.1" 200 -
+2025-02-09 23:27:39,150 - INFO - 127.0.0.1 - - [09/Feb/2025 23:27:39] "GET / HTTP/1.1" 200 -
+2025-02-09 23:28:05,451 - INFO - 127.0.0.1 - - [09/Feb/2025 23:28:05] "GET / HTTP/1.1" 200 -
+2025-02-09 23:28:35,470 - INFO - 127.0.0.1 - - [09/Feb/2025 23:28:35] "GET /api/latest HTTP/1.1" 200 -
+2025-02-09 23:29:05,469 - INFO - 127.0.0.1 - - [09/Feb/2025 23:29:05] "GET /api/latest HTTP/1.1" 200 -
+2025-02-09 23:29:35,467 - INFO - 127.0.0.1 - - [09/Feb/2025 23:29:35] "GET /api/latest HTTP/1.1" 200 -
+2025-02-09 23:30:05,467 - INFO - 127.0.0.1 - - [09/Feb/2025 23:30:05] "GET /api/latest HTTP/1.1" 200 -
+2025-02-09 23:30:35,467 - INFO - 127.0.0.1 - - [09/Feb/2025 23:30:35] "GET /api/latest HTTP/1.1" 200 -
+2025-02-09 23:30:48,641 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2025-02-09 23:30:48,642 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-09 23:30:48,642 - INFO -  * Restarting with stat
+2025-02-09 23:30:49,128 - WARNING -  * Debugger is active!
+2025-02-09 23:30:49,135 - INFO -  * Debugger PIN: 789-166-570
+2025-02-09 23:31:05,466 - INFO - 127.0.0.1 - - [09/Feb/2025 23:31:05] "GET /api/latest HTTP/1.1" 200 -
+2025-02-09 23:31:05,495 - INFO - 127.0.0.1 - - [09/Feb/2025 23:31:05] "GET / HTTP/1.1" 200 -
+2025-02-09 23:31:34,691 - INFO - 127.0.0.1 - - [09/Feb/2025 23:31:34] "GET / HTTP/1.1" 200 -
+2025-02-09 23:32:04,715 - INFO - 127.0.0.1 - - [09/Feb/2025 23:32:04] "GET /api/latest HTTP/1.1" 200 -
+2025-02-09 23:32:34,713 - INFO - 127.0.0.1 - - [09/Feb/2025 23:32:34] "GET /api/latest HTTP/1.1" 200 -
+2025-02-09 23:33:04,712 - INFO - 127.0.0.1 - - [09/Feb/2025 23:33:04] "GET /api/latest HTTP/1.1" 200 -
+2025-02-09 23:33:34,711 - INFO - 127.0.0.1 - - [09/Feb/2025 23:33:34] "GET /api/latest HTTP/1.1" 200 -
+2025-02-09 23:34:04,710 - INFO - 127.0.0.1 - - [09/Feb/2025 23:34:04] "GET /api/latest HTTP/1.1" 200 -
+2025-02-09 23:34:10,389 - INFO -  * Detected change in '/Users/johan/CascadeProjects/bitcoin_trading_signals/trading_signals.py', reloading
+2025-02-09 23:34:10,603 - INFO -  * Restarting with stat
+2025-02-09 23:34:11,367 - WARNING -  * Debugger is active!
+2025-02-09 23:34:11,374 - INFO -  * Debugger PIN: 789-166-570
+2025-02-09 23:34:24,590 - INFO -  * Detected change in '/Users/johan/CascadeProjects/bitcoin_trading_signals/app.py', reloading
+2025-02-09 23:34:24,802 - INFO -  * Restarting with stat
+2025-02-09 23:34:25,491 - WARNING -  * Debugger is active!
+2025-02-09 23:34:25,498 - INFO -  * Debugger PIN: 789-166-570
+2025-02-09 23:34:34,713 - INFO - 127.0.0.1 - - [09/Feb/2025 23:34:34] "GET /api/latest HTTP/1.1" 200 -
+2025-02-09 23:34:34,744 - INFO - 127.0.0.1 - - [09/Feb/2025 23:34:34] "GET / HTTP/1.1" 200 -
+2025-02-09 23:35:04,768 - INFO - 127.0.0.1 - - [09/Feb/2025 23:35:04] "GET /api/latest HTTP/1.1" 200 -
+2025-02-09 23:35:04,779 - INFO - 127.0.0.1 - - [09/Feb/2025 23:35:04] "GET / HTTP/1.1" 200 -
+2025-02-09 23:36:40,963 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2025-02-09 23:36:40,963 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-09 23:36:40,964 - INFO -  * Restarting with stat
+2025-02-09 23:36:41,511 - WARNING -  * Debugger is active!
+2025-02-09 23:36:41,517 - INFO -  * Debugger PIN: 789-166-570
+2025-02-09 23:36:59,109 - INFO - 127.0.0.1 - - [09/Feb/2025 23:36:59] "GET / HTTP/1.1" 200 -
+2025-02-09 23:37:16,043 - INFO - 127.0.0.1 - - [09/Feb/2025 23:37:16] "POST /api/calculate_dca HTTP/1.1" 200 -
+2025-02-09 23:37:29,130 - INFO - 127.0.0.1 - - [09/Feb/2025 23:37:29] "GET /api/latest HTTP/1.1" 200 -
+2025-02-09 23:37:29,143 - INFO - 127.0.0.1 - - [09/Feb/2025 23:37:29] "GET / HTTP/1.1" 200 -
+2025-02-09 23:37:56,788 - INFO - 127.0.0.1 - - [09/Feb/2025 23:37:56] "POST /api/calculate_dca HTTP/1.1" 200 -
+2025-02-09 23:37:59,166 - INFO - 127.0.0.1 - - [09/Feb/2025 23:37:59] "GET /api/latest HTTP/1.1" 200 -
+2025-02-09 23:38:29,165 - INFO - 127.0.0.1 - - [09/Feb/2025 23:38:29] "GET /api/latest HTTP/1.1" 200 -
+2025-02-09 23:38:59,162 - INFO - 127.0.0.1 - - [09/Feb/2025 23:38:59] "GET /api/latest HTTP/1.1" 200 -
+2025-02-09 23:39:29,165 - INFO - 127.0.0.1 - - [09/Feb/2025 23:39:29] "GET /api/latest HTTP/1.1" 200 -
+2025-02-09 23:39:34,117 - INFO -  * Detected change in '/Users/johan/CascadeProjects/bitcoin_trading_signals/trading_signals.py', reloading
+2025-02-09 23:39:34,412 - INFO -  * Restarting with stat
+2025-02-09 23:39:35,188 - WARNING -  * Debugger is active!
+2025-02-09 23:39:35,197 - INFO -  * Debugger PIN: 789-166-570
+2025-02-09 23:39:52,425 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2025-02-09 23:39:52,425 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-09 23:39:52,426 - INFO -  * Restarting with stat
+2025-02-09 23:39:52,941 - WARNING -  * Debugger is active!
+2025-02-09 23:39:52,947 - INFO -  * Debugger PIN: 789-166-570
+2025-02-09 23:39:59,164 - INFO - 127.0.0.1 - - [09/Feb/2025 23:39:59] "GET /api/latest HTTP/1.1" 200 -
+2025-02-09 23:39:59,186 - INFO - 127.0.0.1 - - [09/Feb/2025 23:39:59] "GET / HTTP/1.1" 200 -
+2025-02-09 23:40:03,571 - INFO - 127.0.0.1 - - [09/Feb/2025 23:40:03] "GET / HTTP/1.1" 200 -
+2025-02-09 23:40:07,239 - INFO - 127.0.0.1 - - [09/Feb/2025 23:40:07] "GET / HTTP/1.1" 200 -
+2025-02-09 23:40:09,309 - INFO - 127.0.0.1 - - [09/Feb/2025 23:40:09] "GET / HTTP/1.1" 200 -
+2025-02-09 23:40:16,940 - INFO - 127.0.0.1 - - [09/Feb/2025 23:40:16] "GET / HTTP/1.1" 200 -
+2025-02-09 23:40:24,695 - INFO - 127.0.0.1 - - [09/Feb/2025 23:40:24] "POST /api/calculate_dca HTTP/1.1" 200 -
+2025-02-09 23:40:46,961 - INFO - 127.0.0.1 - - [09/Feb/2025 23:40:46] "GET /api/latest HTTP/1.1" 200 -
+2025-02-09 23:41:16,960 - INFO - 127.0.0.1 - - [09/Feb/2025 23:41:16] "GET /api/latest HTTP/1.1" 200 -
+2025-02-09 23:41:46,959 - INFO - 127.0.0.1 - - [09/Feb/2025 23:41:46] "GET /api/latest HTTP/1.1" 200 -
+2025-02-09 23:42:16,963 - INFO - 127.0.0.1 - - [09/Feb/2025 23:42:16] "GET /api/latest HTTP/1.1" 200 -
+2025-02-09 23:42:46,958 - INFO - 127.0.0.1 - - [09/Feb/2025 23:42:46] "GET /api/latest HTTP/1.1" 200 -
+2025-02-09 23:43:16,958 - INFO - 127.0.0.1 - - [09/Feb/2025 23:43:16] "GET /api/latest HTTP/1.1" 200 -
+2025-02-09 23:43:49,550 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2025-02-09 23:43:49,550 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-09 23:43:49,550 - INFO -  * Restarting with stat
+2025-02-09 23:43:50,103 - WARNING -  * Debugger is active!
+2025-02-09 23:43:50,109 - INFO -  * Debugger PIN: 789-166-570
+2025-02-09 23:44:02,155 - INFO - 127.0.0.1 - - [09/Feb/2025 23:44:02] "GET / HTTP/1.1" 200 -
+2025-02-09 23:44:17,140 - INFO - 127.0.0.1 - - [09/Feb/2025 23:44:17] "GET / HTTP/1.1" 200 -
+2025-02-09 23:44:47,161 - INFO - 127.0.0.1 - - [09/Feb/2025 23:44:47] "GET /api/latest HTTP/1.1" 200 -
+2025-02-09 23:45:17,156 - INFO - 127.0.0.1 - - [09/Feb/2025 23:45:17] "GET /api/latest HTTP/1.1" 200 -
+2025-02-09 23:45:33,163 - INFO -  * Detected change in '/Users/johan/CascadeProjects/bitcoin_trading_signals/trading_signals.py', reloading
+2025-02-09 23:45:33,452 - INFO -  * Restarting with stat
+2025-02-09 23:45:34,347 - WARNING -  * Debugger is active!
+2025-02-09 23:45:34,355 - INFO -  * Debugger PIN: 789-166-570
+2025-02-09 23:45:47,158 - INFO - 127.0.0.1 - - [09/Feb/2025 23:45:47] "GET /api/latest HTTP/1.1" 200 -
+2025-02-09 23:45:47,202 - INFO - 127.0.0.1 - - [09/Feb/2025 23:45:47] "GET / HTTP/1.1" 200 -
+2025-02-09 23:46:25,282 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2025-02-09 23:46:25,282 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-09 23:46:25,283 - INFO -  * Restarting with stat
+2025-02-09 23:46:25,853 - WARNING -  * Debugger is active!
+2025-02-09 23:46:25,859 - INFO -  * Debugger PIN: 789-166-570
+2025-02-09 23:46:34,661 - INFO - 127.0.0.1 - - [09/Feb/2025 23:46:34] "GET / HTTP/1.1" 200 -
+2025-02-09 23:46:36,476 - INFO - 127.0.0.1 - - [09/Feb/2025 23:46:36] "GET / HTTP/1.1" 200 -
+2025-02-09 23:47:06,497 - INFO - 127.0.0.1 - - [09/Feb/2025 23:47:06] "GET /api/latest HTTP/1.1" 200 -
+2025-02-09 23:47:06,516 - INFO - 127.0.0.1 - - [09/Feb/2025 23:47:06] "GET / HTTP/1.1" 200 -
+2025-02-09 23:47:36,535 - INFO - 127.0.0.1 - - [09/Feb/2025 23:47:36] "GET /api/latest HTTP/1.1" 200 -
+2025-02-09 23:48:06,543 - INFO - 127.0.0.1 - - [09/Feb/2025 23:48:06] "GET /api/latest HTTP/1.1" 200 -
+2025-02-09 23:48:23,988 - INFO -  * Detected change in '/Users/johan/CascadeProjects/bitcoin_trading_signals/trading_signals.py', reloading
+2025-02-09 23:48:24,270 - INFO -  * Restarting with stat
+2025-02-09 23:48:25,170 - WARNING -  * Debugger is active!
+2025-02-09 23:48:25,177 - INFO -  * Debugger PIN: 789-166-570
+2025-02-09 23:48:28,699 - ERROR - Error fetching comparison data for BTC/USD: 'int' object has no attribute 'timestamp'
+2025-02-09 23:48:32,241 - ERROR - Error fetching comparison data for ETH/USD: 'int' object has no attribute 'timestamp'
+2025-02-09 23:48:35,783 - ERROR - Error fetching comparison data for ETH/BTC: 'int' object has no attribute 'timestamp'
+2025-02-09 23:48:36,540 - INFO - 127.0.0.1 - - [09/Feb/2025 23:48:36] "GET /api/latest HTTP/1.1" 200 -
+2025-02-09 23:48:36,569 - INFO - 127.0.0.1 - - [09/Feb/2025 23:48:36] "GET / HTTP/1.1" 200 -
+2025-02-09 23:48:59,046 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2025-02-09 23:48:59,046 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-09 23:48:59,047 - INFO -  * Restarting with stat
+2025-02-09 23:48:59,595 - WARNING -  * Debugger is active!
+2025-02-09 23:48:59,602 - INFO -  * Debugger PIN: 789-166-570
+2025-02-09 23:49:02,574 - ERROR - Error fetching comparison data for BTC/USD: 'int' object has no attribute 'timestamp'
+2025-02-09 23:49:03,067 - ERROR - Error fetching comparison data for BTC/USD: 'int' object has no attribute 'timestamp'
+2025-02-09 23:49:06,114 - ERROR - Error fetching comparison data for ETH/USD: 'int' object has no attribute 'timestamp'
+2025-02-09 23:49:06,599 - INFO - 127.0.0.1 - - [09/Feb/2025 23:49:06] "GET /api/latest HTTP/1.1" 200 -
+2025-02-09 23:49:06,626 - INFO - 127.0.0.1 - - [09/Feb/2025 23:49:06] "GET / HTTP/1.1" 200 -
+2025-02-09 23:49:06,704 - ERROR - Error fetching comparison data for ETH/USD: 'int' object has no attribute 'timestamp'
+2025-02-09 23:49:09,661 - ERROR - Error fetching comparison data for ETH/BTC: 'int' object has no attribute 'timestamp'
+2025-02-09 23:49:10,167 - ERROR - Error fetching comparison data for ETH/BTC: 'int' object has no attribute 'timestamp'
+2025-02-09 23:49:36,651 - INFO - 127.0.0.1 - - [09/Feb/2025 23:49:36] "GET /api/latest HTTP/1.1" 200 -
+2025-02-09 23:49:36,665 - INFO - 127.0.0.1 - - [09/Feb/2025 23:49:36] "GET / HTTP/1.1" 200 -
+2025-02-09 23:49:37,568 - INFO - 127.0.0.1 - - [09/Feb/2025 23:49:37] "GET / HTTP/1.1" 200 -
+2025-02-09 23:49:40,912 - INFO - 127.0.0.1 - - [09/Feb/2025 23:49:40] "GET / HTTP/1.1" 200 -
+2025-02-09 23:49:46,414 - INFO - 127.0.0.1 - - [09/Feb/2025 23:49:46] "GET / HTTP/1.1" 200 -
+2025-02-09 23:50:16,435 - INFO - 127.0.0.1 - - [09/Feb/2025 23:50:16] "GET /api/latest HTTP/1.1" 200 -
+2025-02-09 23:50:16,447 - INFO - 127.0.0.1 - - [09/Feb/2025 23:50:16] "GET / HTTP/1.1" 200 -
+2025-02-09 23:50:39,417 - INFO -  * Detected change in '/Users/johan/CascadeProjects/bitcoin_trading_signals/trading_signals.py', reloading
+2025-02-09 23:50:39,697 - INFO -  * Restarting with stat
+2025-02-09 23:50:40,522 - WARNING -  * Debugger is active!
+2025-02-09 23:50:40,527 - INFO -  * Debugger PIN: 789-166-570
+2025-02-09 23:50:46,470 - INFO - 127.0.0.1 - - [09/Feb/2025 23:50:46] "GET /api/latest HTTP/1.1" 200 -
+2025-02-09 23:50:46,498 - INFO - 127.0.0.1 - - [09/Feb/2025 23:50:46] "GET / HTTP/1.1" 200 -
+2025-02-09 23:50:59,263 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2025-02-09 23:50:59,263 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-09 23:50:59,264 - INFO -  * Restarting with stat
+2025-02-09 23:50:59,820 - WARNING -  * Debugger is active!
+2025-02-09 23:50:59,827 - INFO -  * Debugger PIN: 789-166-570
+2025-02-09 23:51:13,849 - INFO - 127.0.0.1 - - [09/Feb/2025 23:51:13] "GET / HTTP/1.1" 200 -
+2025-02-09 23:51:16,664 - INFO - 127.0.0.1 - - [09/Feb/2025 23:51:16] "GET / HTTP/1.1" 200 -
+2025-02-09 23:51:19,887 - INFO - 127.0.0.1 - - [09/Feb/2025 23:51:19] "GET / HTTP/1.1" 200 -
+2025-02-09 23:51:22,427 - INFO - 127.0.0.1 - - [09/Feb/2025 23:51:22] "GET / HTTP/1.1" 200 -
+2025-02-09 23:51:52,447 - INFO - 127.0.0.1 - - [09/Feb/2025 23:51:52] "GET /api/latest HTTP/1.1" 200 -
+2025-02-09 23:51:52,457 - INFO - 127.0.0.1 - - [09/Feb/2025 23:51:52] "GET / HTTP/1.1" 200 -
+2025-02-09 23:51:59,001 - INFO -  * Detected change in '/Users/johan/CascadeProjects/bitcoin_trading_signals/app.py', reloading
+2025-02-09 23:51:59,241 - INFO -  * Restarting with stat
+2025-02-09 23:53:19,925 - INFO - Starting analysis for BTC/USD
+2025-02-09 23:53:19,928 - INFO - Starting analysis for BTC/USD
+2025-02-09 23:53:22,260 - INFO - Successfully fetched historical data for BTC/USD
+2025-02-09 23:53:22,263 - INFO - Generated signal for BTC/USD: BUY
+2025-02-09 23:53:22,330 - INFO - Successfully fetched historical data for BTC/USD
+2025-02-09 23:53:22,330 - INFO - Generated signal for BTC/USD: BUY
+2025-02-09 23:53:23,830 - INFO - Updated analysis for BTC/USD
+2025-02-09 23:53:23,835 - INFO - Starting analysis for ETH/USD
+2025-02-09 23:53:26,163 - INFO - Successfully fetched historical data for ETH/USD
+2025-02-09 23:53:26,163 - INFO - Generated signal for ETH/USD: SELL
+2025-02-09 23:53:29,377 - INFO - Updated analysis for ETH/USD
+2025-02-09 23:53:29,389 - INFO - Starting analysis for ETH/BTC
+2025-02-09 23:53:30,151 - INFO - Updated analysis for BTC/USD
+2025-02-09 23:53:30,155 - INFO - Starting analysis for ETH/USD
+2025-02-09 23:53:31,695 - INFO - Successfully fetched historical data for ETH/BTC
+2025-02-09 23:53:31,696 - INFO - Generated signal for ETH/BTC: SELL
+2025-02-09 23:53:32,527 - INFO - Successfully fetched historical data for ETH/USD
+2025-02-09 23:53:32,527 - INFO - Generated signal for ETH/USD: SELL
+2025-02-09 23:53:36,001 - INFO - Updated analysis for ETH/USD
+2025-02-09 23:53:36,006 - INFO - Starting analysis for ETH/BTC
+2025-02-09 23:53:36,491 - INFO - Updated analysis for ETH/BTC
+2025-02-09 23:53:38,338 - INFO - Successfully fetched historical data for ETH/BTC
+2025-02-09 23:53:38,339 - INFO - Generated signal for ETH/BTC: SELL
+2025-02-09 23:53:41,820 - INFO - Updated analysis for ETH/BTC
+2025-02-09 23:53:41,829 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2025-02-09 23:53:41,829 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-09 23:53:52,479 - INFO - 127.0.0.1 - - [09/Feb/2025 23:53:52] "GET /api/latest HTTP/1.1" 200 -
+2025-02-09 23:53:52,507 - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "/Users/johan/CascadeProjects/bitcoin_trading_signals/.venv/lib/python3.13/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/johan/CascadeProjects/bitcoin_trading_signals/.venv/lib/python3.13/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/johan/CascadeProjects/bitcoin_trading_signals/.venv/lib/python3.13/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/johan/CascadeProjects/bitcoin_trading_signals/.venv/lib/python3.13/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/Users/johan/CascadeProjects/bitcoin_trading_signals/app.py", line 75, in index
+    return render_template('index.html', analysis=analysis_results)
+  File "/Users/johan/CascadeProjects/bitcoin_trading_signals/.venv/lib/python3.13/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "/Users/johan/CascadeProjects/bitcoin_trading_signals/.venv/lib/python3.13/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+  File "/Users/johan/CascadeProjects/bitcoin_trading_signals/.venv/lib/python3.13/site-packages/jinja2/environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/johan/CascadeProjects/bitcoin_trading_signals/.venv/lib/python3.13/site-packages/jinja2/environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/Users/johan/CascadeProjects/bitcoin_trading_signals/templates/index.html", line 148, in top-level template code
+    {% set signal_lines = data.signal.split('\n') %}
+    
+  File "/Users/johan/CascadeProjects/bitcoin_trading_signals/.venv/lib/python3.13/site-packages/jinja2/utils.py", line 92, in from_obj
+    if hasattr(obj, "jinja_pass_arg"):
+       ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'dict object' has no attribute 'split'
+2025-02-09 23:53:52,510 - INFO - 127.0.0.1 - - [09/Feb/2025 23:53:52] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-02-09 23:56:59,450 - INFO - Starting analysis for BTC/USD
+2025-02-09 23:56:59,452 - INFO - Starting analysis for BTC/USD
+2025-02-09 23:57:01,785 - INFO - Successfully fetched historical data for BTC/USD
+2025-02-09 23:57:01,790 - INFO - Generated signal for BTC/USD: BUY
+2025-02-09 23:57:01,863 - INFO - Successfully fetched historical data for BTC/USD
+2025-02-09 23:57:01,863 - INFO - Generated signal for BTC/USD: BUY
+2025-02-09 23:57:15,021 - INFO - Updated analysis for BTC/USD
+2025-02-09 23:57:15,040 - INFO - Starting analysis for ETH/USD
+2025-02-09 23:57:15,142 - INFO - Updated analysis for BTC/USD
+2025-02-09 23:57:15,154 - INFO - Starting analysis for ETH/USD
+2025-02-09 23:57:17,496 - INFO - Successfully fetched historical data for ETH/USD
+2025-02-09 23:57:17,499 - INFO - Generated signal for ETH/USD: SELL
+2025-02-09 23:57:17,538 - INFO - Successfully fetched historical data for ETH/USD
+2025-02-09 23:57:17,540 - INFO - Generated signal for ETH/USD: SELL
+2025-02-09 23:57:20,952 - INFO - Updated analysis for ETH/USD
+2025-02-09 23:57:20,964 - INFO - Starting analysis for ETH/BTC
+2025-02-09 23:57:21,678 - INFO - Updated analysis for ETH/USD
+2025-02-09 23:57:21,690 - INFO - Starting analysis for ETH/BTC
+2025-02-09 23:57:23,323 - INFO - Successfully fetched historical data for ETH/BTC
+2025-02-09 23:57:23,324 - INFO - Generated signal for ETH/BTC: SELL
+2025-02-09 23:57:24,118 - INFO - Successfully fetched historical data for ETH/BTC
+2025-02-09 23:57:24,119 - INFO - Generated signal for ETH/BTC: SELL
+2025-02-09 23:57:27,349 - INFO - Updated analysis for ETH/BTC
+2025-02-09 23:57:27,366 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2025-02-09 23:57:27,366 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-09 23:57:28,307 - INFO - Updated analysis for ETH/BTC
+2025-02-09 23:57:40,825 - INFO - 127.0.0.1 - - [09/Feb/2025 23:57:40] "GET / HTTP/1.1" 200 -
+2025-02-09 23:59:41,786 - INFO - Starting analysis for BTC/USD
+2025-02-09 23:59:41,788 - INFO - Starting analysis for BTC/USD
+2025-02-09 23:59:44,127 - INFO - Successfully fetched historical data for BTC/USD
+2025-02-09 23:59:44,128 - INFO - Generated signal for BTC/USD: BUY
+2025-02-09 23:59:44,199 - INFO - Successfully fetched historical data for BTC/USD
+2025-02-09 23:59:44,199 - INFO - Generated signal for BTC/USD: BUY
+2025-02-09 23:59:51,586 - INFO - Updated analysis for BTC/USD
+2025-02-09 23:59:51,602 - INFO - Starting analysis for ETH/USD
+2025-02-09 23:59:53,932 - INFO - Successfully fetched historical data for ETH/USD
+2025-02-09 23:59:53,933 - INFO - Generated signal for ETH/USD: SELL
+2025-02-09 23:59:57,148 - INFO - Updated analysis for BTC/USD
+2025-02-09 23:59:57,161 - INFO - Starting analysis for ETH/USD
+2025-02-09 23:59:57,954 - INFO - Updated analysis for ETH/USD
+2025-02-09 23:59:57,969 - INFO - Starting analysis for ETH/BTC
+2025-02-09 23:59:59,497 - INFO - Successfully fetched historical data for ETH/USD
+2025-02-09 23:59:59,498 - INFO - Generated signal for ETH/USD: SELL
+2025-02-10 00:00:00,310 - INFO - Successfully fetched historical data for ETH/BTC
+2025-02-10 00:00:00,311 - INFO - Generated signal for ETH/BTC: SELL
+2025-02-10 00:00:14,171 - INFO - Updated analysis for ETH/USD
+2025-02-10 00:00:14,192 - INFO - Starting analysis for ETH/BTC
+2025-02-10 00:00:16,534 - INFO - Successfully fetched historical data for ETH/BTC
+2025-02-10 00:00:16,536 - INFO - Generated signal for ETH/BTC: SELL
+2025-02-10 00:00:21,559 - INFO - Updated analysis for ETH/BTC
+2025-02-10 00:00:30,170 - INFO - Updated analysis for ETH/BTC
+2025-02-10 00:00:30,197 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2025-02-10 00:00:30,198 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-10 00:00:30,380 - INFO - 127.0.0.1 - - [10/Feb/2025 00:00:30] "GET / HTTP/1.1" 200 -
+2025-02-10 00:00:30,582 - INFO - 127.0.0.1 - - [10/Feb/2025 00:00:30] "GET / HTTP/1.1" 200 -
+2025-02-10 00:00:32,133 - INFO - 127.0.0.1 - - [10/Feb/2025 00:00:32] "GET / HTTP/1.1" 200 -
+2025-02-10 00:00:32,826 - INFO - 127.0.0.1 - - [10/Feb/2025 00:00:32] "GET / HTTP/1.1" 200 -
+2025-02-10 00:00:33,342 - INFO - 127.0.0.1 - - [10/Feb/2025 00:00:33] "GET / HTTP/1.1" 200 -
+2025-02-10 00:00:33,582 - INFO - 127.0.0.1 - - [10/Feb/2025 00:00:33] "GET / HTTP/1.1" 200 -
+2025-02-10 00:00:34,228 - INFO - 127.0.0.1 - - [10/Feb/2025 00:00:34] "GET / HTTP/1.1" 200 -
+2025-02-10 00:00:34,512 - INFO - 127.0.0.1 - - [10/Feb/2025 00:00:34] "GET / HTTP/1.1" 200 -
+2025-02-10 00:01:47,077 - INFO - Starting analysis for BTC/USD
+2025-02-10 00:01:47,079 - INFO - Starting analysis for BTC/USD
+2025-02-10 00:01:49,403 - INFO - Successfully fetched historical data for BTC/USD
+2025-02-10 00:01:49,405 - INFO - Successfully fetched historical data for BTC/USD
+2025-02-10 00:01:49,406 - INFO - Generated signal for BTC/USD: BUY
+2025-02-10 00:01:49,407 - INFO - Generated signal for BTC/USD: BUY
+2025-02-10 00:01:58,776 - INFO - Updated analysis for BTC/USD
+2025-02-10 00:01:58,791 - INFO - Starting analysis for ETH/USD
+2025-02-10 00:01:59,826 - INFO - Updated analysis for BTC/USD
+2025-02-10 00:01:59,835 - INFO - Starting analysis for ETH/USD
+2025-02-10 00:02:01,126 - INFO - Successfully fetched historical data for ETH/USD
+2025-02-10 00:02:01,127 - INFO - Generated signal for ETH/USD: SELL
+2025-02-10 00:02:02,153 - INFO - Successfully fetched historical data for ETH/USD
+2025-02-10 00:02:02,155 - INFO - Generated signal for ETH/USD: SELL
+2025-02-10 00:02:11,855 - INFO - Updated analysis for ETH/USD
+2025-02-10 00:02:11,874 - INFO - Starting analysis for ETH/BTC
+2025-02-10 00:02:13,632 - INFO - Updated analysis for ETH/USD
+2025-02-10 00:02:13,646 - INFO - Starting analysis for ETH/BTC
+2025-02-10 00:02:14,212 - INFO - Successfully fetched historical data for ETH/BTC
+2025-02-10 00:02:14,213 - INFO - Generated signal for ETH/BTC: SELL
+2025-02-10 00:02:15,995 - INFO - Successfully fetched historical data for ETH/BTC
+2025-02-10 00:02:15,996 - INFO - Generated signal for ETH/BTC: SELL
+2025-02-10 00:02:22,003 - INFO - Updated analysis for ETH/BTC
+2025-02-10 00:02:22,023 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2025-02-10 00:02:22,023 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-10 00:02:24,150 - INFO - 127.0.0.1 - - [10/Feb/2025 00:02:24] "GET / HTTP/1.1" 200 -
+2025-02-10 00:02:25,115 - INFO - Updated analysis for ETH/BTC
+2025-02-10 16:34:07,812 - INFO - Starting analysis for BTC/USD
+2025-02-10 16:34:07,815 - INFO - Starting analysis for BTC/USD
+2025-02-10 16:34:10,180 - INFO - Successfully fetched historical data for BTC/USD
+2025-02-10 16:34:10,185 - INFO - Generated signal for BTC/USD: BUY
+2025-02-10 16:34:10,190 - INFO - Successfully fetched historical data for BTC/USD
+2025-02-10 16:34:10,191 - INFO - Generated signal for BTC/USD: BUY
+2025-02-10 16:34:23,850 - INFO - Updated analysis for BTC/USD
+2025-02-10 16:34:23,850 - INFO - Updated analysis for BTC/USD
+2025-02-10 16:34:23,870 - INFO - Starting analysis for ETH/USD
+2025-02-10 16:34:23,875 - INFO - Starting analysis for ETH/USD
+2025-02-10 16:34:26,272 - INFO - Successfully fetched historical data for ETH/USD
+2025-02-10 16:34:26,275 - INFO - Generated signal for ETH/USD: SELL
+2025-02-10 16:34:26,290 - INFO - Successfully fetched historical data for ETH/USD
+2025-02-10 16:34:26,291 - INFO - Generated signal for ETH/USD: SELL
+2025-02-10 16:34:30,377 - INFO - Updated analysis for ETH/USD
+2025-02-10 16:34:30,391 - INFO - Starting analysis for ETH/BTC
+2025-02-10 16:34:30,579 - INFO - Updated analysis for ETH/USD
+2025-02-10 16:34:30,592 - INFO - Starting analysis for ETH/BTC
+2025-02-10 16:34:32,858 - INFO - Successfully fetched historical data for ETH/BTC
+2025-02-10 16:34:32,860 - INFO - Generated signal for ETH/BTC: SELL
+2025-02-10 16:34:32,875 - INFO - Successfully fetched historical data for ETH/BTC
+2025-02-10 16:34:32,876 - INFO - Generated signal for ETH/BTC: SELL
+2025-02-10 16:34:36,342 - INFO - Updated analysis for ETH/BTC
+2025-02-10 16:34:37,749 - INFO - Updated analysis for ETH/BTC
+2025-02-10 16:34:37,768 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2025-02-10 16:34:37,769 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-10 16:35:00,522 - INFO - 127.0.0.1 - - [10/Feb/2025 16:35:00] "GET / HTTP/1.1" 200 -
+2025-02-10 16:35:00,926 - INFO - 127.0.0.1 - - [10/Feb/2025 16:35:00] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-02-10 16:39:36,353 - INFO - Starting analysis for BTC/USD
+2025-02-10 16:39:38,835 - INFO - Successfully fetched historical data for BTC/USD
+2025-02-10 16:39:38,837 - INFO - Generated signal for BTC/USD: BUY
+2025-02-10 16:39:44,124 - INFO - Updated analysis for BTC/USD
+2025-02-10 16:39:44,138 - INFO - Starting analysis for ETH/USD
+2025-02-10 16:39:46,499 - INFO - Successfully fetched historical data for ETH/USD
+2025-02-10 16:39:46,501 - INFO - Generated signal for ETH/USD: SELL
+2025-02-10 16:39:49,726 - INFO - Updated analysis for ETH/USD
+2025-02-10 16:39:49,738 - INFO - Starting analysis for ETH/BTC
+2025-02-10 16:39:52,322 - INFO - Successfully fetched historical data for ETH/BTC
+2025-02-10 16:39:52,323 - INFO - Generated signal for ETH/BTC: SELL
+2025-02-10 16:39:55,920 - INFO - Updated analysis for ETH/BTC
+2025-02-10 16:44:55,936 - INFO - Starting analysis for BTC/USD
+2025-02-10 16:44:58,245 - INFO - Successfully fetched historical data for BTC/USD
+2025-02-10 16:44:58,247 - INFO - Generated signal for BTC/USD: BUY
+2025-02-10 16:45:03,090 - INFO - Updated analysis for BTC/USD
+2025-02-10 16:45:03,103 - INFO - Starting analysis for ETH/USD
+2025-02-10 16:45:05,653 - INFO - Successfully fetched historical data for ETH/USD
+2025-02-10 16:45:05,654 - INFO - Generated signal for ETH/USD: SELL
+2025-02-10 16:45:15,210 - INFO - Updated analysis for ETH/USD
+2025-02-10 16:45:15,221 - INFO - Starting analysis for ETH/BTC
+2025-02-10 16:45:17,545 - INFO - Successfully fetched historical data for ETH/BTC
+2025-02-10 16:45:17,547 - INFO - Generated signal for ETH/BTC: SELL
+2025-02-10 16:45:22,229 - INFO - Updated analysis for ETH/BTC
+2025-02-10 16:49:39,948 - INFO - 127.0.0.1 - - [10/Feb/2025 16:49:39] "GET / HTTP/1.1" 200 -
+2025-02-10 16:49:43,911 - INFO - 127.0.0.1 - - [10/Feb/2025 16:49:43] "GET / HTTP/1.1" 200 -
+2025-02-10 16:49:44,790 - INFO - 127.0.0.1 - - [10/Feb/2025 16:49:44] "GET / HTTP/1.1" 200 -
+2025-02-10 16:49:45,276 - INFO - 127.0.0.1 - - [10/Feb/2025 16:49:45] "GET / HTTP/1.1" 200 -
+2025-02-10 16:49:45,522 - INFO - 127.0.0.1 - - [10/Feb/2025 16:49:45] "GET / HTTP/1.1" 200 -
+2025-02-10 16:49:45,754 - INFO - 127.0.0.1 - - [10/Feb/2025 16:49:45] "GET / HTTP/1.1" 200 -
+2025-02-10 16:49:46,103 - INFO - 127.0.0.1 - - [10/Feb/2025 16:49:46] "GET / HTTP/1.1" 200 -
+2025-02-10 16:49:57,949 - INFO - 127.0.0.1 - - [10/Feb/2025 16:49:57] "GET / HTTP/1.1" 200 -
+2025-02-10 16:50:00,225 - INFO - 127.0.0.1 - - [10/Feb/2025 16:50:00] "GET / HTTP/1.1" 200 -
+2025-02-10 16:50:01,139 - INFO - 127.0.0.1 - - [10/Feb/2025 16:50:01] "GET / HTTP/1.1" 200 -
+2025-02-10 16:50:01,389 - INFO - 127.0.0.1 - - [10/Feb/2025 16:50:01] "GET / HTTP/1.1" 200 -
+2025-02-10 16:50:22,242 - INFO - Starting analysis for BTC/USD
+2025-02-10 16:50:24,835 - INFO - Successfully fetched historical data for BTC/USD
+2025-02-10 16:50:24,838 - INFO - Generated signal for BTC/USD: BUY
+2025-02-10 16:50:30,545 - INFO - Updated analysis for BTC/USD
+2025-02-10 16:50:30,557 - INFO - Starting analysis for ETH/USD
+2025-02-10 16:50:32,914 - INFO - Successfully fetched historical data for ETH/USD
+2025-02-10 16:50:32,915 - INFO - Generated signal for ETH/USD: SELL
+2025-02-10 16:50:46,737 - INFO - Updated analysis for ETH/USD
+2025-02-10 16:50:46,751 - INFO - Starting analysis for ETH/BTC
+2025-02-10 16:50:49,098 - INFO - Successfully fetched historical data for ETH/BTC
+2025-02-10 16:50:49,099 - INFO - Generated signal for ETH/BTC: SELL
+2025-02-10 16:50:56,568 - INFO - Updated analysis for ETH/BTC
+2025-02-10 16:51:27,456 - INFO - 127.0.0.1 - - [10/Feb/2025 16:51:27] "GET / HTTP/1.1" 200 -
+2025-02-10 16:51:28,952 - INFO - 127.0.0.1 - - [10/Feb/2025 16:51:28] "GET / HTTP/1.1" 200 -
+2025-02-10 16:54:32,640 - INFO - 127.0.0.1 - - [10/Feb/2025 16:54:32] "GET / HTTP/1.1" 200 -
+2025-02-10 16:54:37,652 - INFO - 127.0.0.1 - - [10/Feb/2025 16:54:37] "GET / HTTP/1.1" 200 -
+2025-02-10 16:54:39,821 - INFO - 127.0.0.1 - - [10/Feb/2025 16:54:39] "GET / HTTP/1.1" 200 -
+2025-02-10 16:55:20,607 - INFO - 127.0.0.1 - - [10/Feb/2025 16:55:20] "GET / HTTP/1.1" 200 -
+2025-02-10 16:55:41,702 - INFO - 127.0.0.1 - - [10/Feb/2025 16:55:41] "GET / HTTP/1.1" 200 -
+2025-02-10 16:55:56,583 - INFO - Starting analysis for BTC/USD
+2025-02-10 16:55:58,936 - INFO - Successfully fetched historical data for BTC/USD
+2025-02-10 16:55:58,939 - INFO - Generated signal for BTC/USD: BUY
+2025-02-10 16:56:09,225 - INFO - Updated analysis for BTC/USD
+2025-02-10 16:56:09,238 - INFO - Starting analysis for ETH/USD
+2025-02-10 16:56:11,592 - INFO - Successfully fetched historical data for ETH/USD
+2025-02-10 16:56:11,593 - INFO - Generated signal for ETH/USD: SELL
+2025-02-10 16:56:15,022 - INFO - Updated analysis for ETH/USD
+2025-02-10 16:56:15,032 - INFO - Starting analysis for ETH/BTC
+2025-02-10 16:56:17,368 - INFO - Successfully fetched historical data for ETH/BTC
+2025-02-10 16:56:17,369 - INFO - Generated signal for ETH/BTC: SELL
+2025-02-10 16:56:21,231 - INFO - Updated analysis for ETH/BTC
+2025-02-10 16:59:24,650 - INFO - Updated analysis for BTC/USD
+2025-02-10 16:59:24,700 - INFO - Updated analysis for BTC/USD
+2025-02-10 16:59:29,351 - INFO - Updated analysis for ETH/USD
+2025-02-10 16:59:29,364 - INFO - Updated analysis for ETH/USD
+2025-02-10 16:59:34,131 - INFO - Updated analysis for ETH/BTC
+2025-02-10 16:59:34,143 - INFO - Updated analysis for ETH/BTC
+2025-02-10 16:59:40,468 - INFO - 127.0.0.1 - - [10/Feb/2025 16:59:40] "GET / HTTP/1.1" 200 -
+2025-02-10 16:59:42,261 - INFO - 127.0.0.1 - - [10/Feb/2025 16:59:42] "GET / HTTP/1.1" 200 -
+2025-02-10 16:59:43,413 - INFO - 127.0.0.1 - - [10/Feb/2025 16:59:43] "GET / HTTP/1.1" 200 -
+2025-02-10 16:59:44,030 - INFO - 127.0.0.1 - - [10/Feb/2025 16:59:44] "GET / HTTP/1.1" 200 -
+2025-02-10 16:59:44,265 - INFO - 127.0.0.1 - - [10/Feb/2025 16:59:44] "GET / HTTP/1.1" 200 -
+2025-02-10 16:59:44,477 - INFO - 127.0.0.1 - - [10/Feb/2025 16:59:44] "GET / HTTP/1.1" 200 -
+2025-02-10 16:59:44,676 - INFO - 127.0.0.1 - - [10/Feb/2025 16:59:44] "GET / HTTP/1.1" 200 -
+2025-02-10 16:59:56,401 - INFO - 127.0.0.1 - - [10/Feb/2025 16:59:56] "GET / HTTP/1.1" 200 -
+2025-02-10 17:00:04,661 - INFO - 127.0.0.1 - - [10/Feb/2025 17:00:04] "GET / HTTP/1.1" 200 -
+2025-02-10 17:01:21,238 - INFO - Starting analysis for BTC/USD
+2025-02-10 17:01:23,596 - INFO - Successfully fetched historical data for BTC/USD
+2025-02-10 17:01:23,597 - INFO - Generated signal for BTC/USD: BUY
+2025-02-10 17:01:43,933 - INFO - Updated analysis for BTC/USD
+2025-02-10 17:01:43,948 - INFO - Starting analysis for ETH/USD
+2025-02-10 17:01:46,305 - INFO - Successfully fetched historical data for ETH/USD
+2025-02-10 17:01:46,307 - INFO - Generated signal for ETH/USD: SELL
+2025-02-10 17:01:50,791 - INFO - Updated analysis for ETH/USD
+2025-02-10 17:01:50,803 - INFO - Starting analysis for ETH/BTC
+2025-02-10 17:01:53,146 - INFO - Successfully fetched historical data for ETH/BTC
+2025-02-10 17:01:53,146 - INFO - Generated signal for ETH/BTC: SELL
+2025-02-10 17:01:57,247 - INFO - Updated analysis for ETH/BTC
+2025-02-10 17:01:58,047 - INFO - Updated analysis for BTC/USD
+2025-02-10 17:01:58,048 - INFO - Updated analysis for BTC/USD
+2025-02-10 17:02:02,833 - INFO - Updated analysis for ETH/USD
+2025-02-10 17:02:02,853 - INFO - Updated analysis for ETH/USD
+2025-02-10 17:02:07,597 - INFO - Updated analysis for ETH/BTC
+2025-02-10 17:02:07,612 - INFO - Updated analysis for ETH/BTC
+2025-02-10 17:02:07,714 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.68.102:8080
+2025-02-10 17:02:07,715 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-10 17:02:07,715 - INFO -  * Restarting with stat
+2025-02-10 17:02:13,463 - INFO - Updated analysis for BTC/USD
+2025-02-10 17:02:13,547 - INFO - Updated analysis for BTC/USD
+2025-02-10 17:02:18,333 - INFO - Updated analysis for ETH/USD
+2025-02-10 17:02:18,357 - INFO - Updated analysis for ETH/USD
+2025-02-10 17:02:23,101 - INFO - Updated analysis for ETH/BTC
+2025-02-10 17:02:23,143 - WARNING -  * Debugger is active!
+2025-02-10 17:02:23,156 - INFO -  * Debugger PIN: 748-179-798
+2025-02-10 17:02:23,171 - INFO - Updated analysis for ETH/BTC
+2025-02-10 17:02:23,185 - INFO - 127.0.0.1 - - [10/Feb/2025 17:02:23] "GET / HTTP/1.1" 200 -
+2025-02-10 17:02:23,268 - INFO - 127.0.0.1 - - [10/Feb/2025 17:02:23] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-02-10 17:02:47,736 - INFO - 127.0.0.1 - - [10/Feb/2025 17:02:47] "POST /api/dca-calculator HTTP/1.1" 200 -
+2025-02-10 17:02:49,302 - INFO - 127.0.0.1 - - [10/Feb/2025 17:02:49] "POST /api/dca-calculator HTTP/1.1" 200 -
+2025-02-10 17:06:57,261 - INFO - Starting analysis for BTC/USD
+2025-02-10 17:06:59,634 - INFO - Successfully fetched historical data for BTC/USD
+2025-02-10 17:06:59,637 - INFO - Generated signal for BTC/USD: BUY
+2025-02-10 17:07:07,997 - INFO - Updated analysis for BTC/USD
+2025-02-10 17:07:08,009 - INFO - Starting analysis for ETH/USD
+2025-02-10 17:07:10,387 - INFO - Successfully fetched historical data for ETH/USD
+2025-02-10 17:07:10,389 - INFO - Generated signal for ETH/USD: SELL
+2025-02-10 17:07:12,373 - INFO - Updated analysis for BTC/USD
+2025-02-10 17:07:14,003 - INFO - Updated analysis for ETH/USD
+2025-02-10 17:07:14,016 - INFO - Starting analysis for ETH/BTC
+2025-02-10 17:07:16,372 - INFO - Successfully fetched historical data for ETH/BTC
+2025-02-10 17:07:16,373 - INFO - Generated signal for ETH/BTC: SELL
+2025-02-10 17:07:17,239 - INFO - Updated analysis for ETH/USD
+2025-02-10 17:07:21,803 - INFO - Updated analysis for ETH/BTC
+2025-02-10 17:07:21,998 - INFO - Updated analysis for ETH/BTC
+2025-02-10 17:07:27,943 - INFO - Updated analysis for BTC/USD
+2025-02-10 17:07:32,738 - INFO - Updated analysis for ETH/USD
+2025-02-10 17:07:37,726 - INFO - Updated analysis for ETH/BTC
+2025-02-10 17:12:21,815 - INFO - Starting analysis for BTC/USD
+2025-02-10 17:12:24,286 - INFO - Successfully fetched historical data for BTC/USD
+2025-02-10 17:12:24,288 - INFO - Generated signal for BTC/USD: BUY
+2025-02-10 17:12:26,778 - INFO - Updated analysis for BTC/USD
+2025-02-10 17:12:29,905 - INFO - Updated analysis for BTC/USD
+2025-02-10 17:12:29,917 - INFO - Starting analysis for ETH/USD
+2025-02-10 17:12:31,571 - INFO - Updated analysis for ETH/USD
+2025-02-10 17:12:32,417 - INFO - Successfully fetched historical data for ETH/USD
+2025-02-10 17:12:32,419 - INFO - Generated signal for ETH/USD: SELL
+2025-02-10 17:12:35,574 - INFO - Updated analysis for ETH/USD
+2025-02-10 17:12:35,586 - INFO - Starting analysis for ETH/BTC
+2025-02-10 17:12:36,350 - INFO - Updated analysis for ETH/BTC
+2025-02-10 17:12:38,009 - INFO - Successfully fetched historical data for ETH/BTC
+2025-02-10 17:12:38,010 - INFO - Generated signal for ETH/BTC: SELL
+2025-02-10 17:12:42,487 - INFO - Updated analysis for BTC/USD
+2025-02-10 17:12:43,168 - INFO - Updated analysis for ETH/BTC
+2025-02-10 17:12:47,345 - INFO - Updated analysis for ETH/USD
+2025-02-10 17:12:52,283 - INFO - Updated analysis for ETH/BTC
+2025-02-10 17:17:41,284 - INFO - Updated analysis for BTC/USD
+2025-02-10 17:17:43,275 - INFO - Starting analysis for BTC/USD
+2025-02-10 17:17:45,751 - INFO - Successfully fetched historical data for BTC/USD
+2025-02-10 17:17:45,754 - INFO - Generated signal for BTC/USD: BUY
+2025-02-10 17:17:46,052 - INFO - Updated analysis for ETH/USD
+2025-02-10 17:17:50,797 - INFO - Updated analysis for ETH/BTC
+2025-02-10 17:17:51,196 - INFO - Updated analysis for BTC/USD
+2025-02-10 17:17:51,202 - INFO - Starting analysis for ETH/USD
+2025-02-10 17:17:53,537 - INFO - Successfully fetched historical data for ETH/USD
+2025-02-10 17:17:53,538 - INFO - Generated signal for ETH/USD: SELL
+2025-02-10 17:17:57,124 - INFO - Updated analysis for BTC/USD
+2025-02-10 17:17:58,335 - INFO - Updated analysis for ETH/USD
+2025-02-10 17:17:58,340 - INFO - Starting analysis for ETH/BTC
+2025-02-10 17:18:00,774 - INFO - Successfully fetched historical data for ETH/BTC
+2025-02-10 17:18:00,775 - INFO - Generated signal for ETH/BTC: SELL
+2025-02-10 17:18:01,926 - INFO - Updated analysis for ETH/USD
+2025-02-10 17:18:06,696 - INFO - Updated analysis for ETH/BTC
+2025-02-10 17:18:06,877 - INFO - Updated analysis for ETH/BTC
+2025-02-10 17:22:55,513 - INFO - Updated analysis for BTC/USD
+2025-02-10 17:23:00,296 - INFO - Updated analysis for ETH/USD
+2025-02-10 17:23:05,056 - INFO - Updated analysis for ETH/BTC
+2025-02-10 17:23:06,887 - INFO - Starting analysis for BTC/USD
+2025-02-10 17:23:09,189 - INFO - Successfully fetched historical data for BTC/USD
+2025-02-10 17:23:09,192 - INFO - Generated signal for BTC/USD: BUY
+2025-02-10 17:23:11,604 - INFO - Updated analysis for BTC/USD
+2025-02-10 17:23:16,367 - INFO - Updated analysis for ETH/USD
+2025-02-10 17:23:17,891 - INFO - Updated analysis for BTC/USD
+2025-02-10 17:23:17,914 - INFO - Starting analysis for ETH/USD
+2025-02-10 17:23:20,252 - INFO - Successfully fetched historical data for ETH/USD
+2025-02-10 17:23:20,256 - INFO - Generated signal for ETH/USD: SELL
+2025-02-10 17:23:21,194 - INFO - Updated analysis for ETH/BTC
+2025-02-10 17:23:23,557 - INFO - Updated analysis for ETH/USD
+2025-02-10 17:23:23,564 - INFO - Starting analysis for ETH/BTC
+2025-02-10 17:23:25,989 - INFO - Successfully fetched historical data for ETH/BTC
+2025-02-10 17:23:25,990 - INFO - Generated signal for ETH/BTC: SELL
+2025-02-10 17:23:30,130 - INFO - Updated analysis for ETH/BTC
+2025-03-18 11:48:24,195 - INFO - Updated analysis for BTC/USD
+2025-03-18 11:48:24,215 - INFO - Updated analysis for BTC/USD
+2025-03-18 11:48:28,967 - INFO - Updated analysis for ETH/USD
+2025-03-18 11:48:29,006 - INFO - Updated analysis for ETH/USD
+2025-03-18 11:48:33,732 - INFO - Updated analysis for ETH/BTC
+2025-03-18 11:48:33,749 - INFO - Updated analysis for ETH/BTC
+2025-03-18 11:49:01,520 - INFO - Updated analysis for BTC/USD
+2025-03-18 11:49:01,600 - INFO - Updated analysis for BTC/USD
+2025-03-18 11:49:06,276 - INFO - Updated analysis for ETH/USD
+2025-03-18 11:49:06,290 - INFO - Updated analysis for ETH/USD
+2025-03-18 11:49:11,040 - INFO - Updated analysis for ETH/BTC
+2025-03-18 11:49:11,046 - INFO - Updated analysis for ETH/BTC
+2025-03-18 11:49:11,321 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:10000
+ * Running on http://192.168.68.105:10000
+2025-03-18 11:49:11,322 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-18 11:49:11,323 - INFO -  * Restarting with stat
+2025-03-18 11:49:16,669 - INFO - Updated analysis for BTC/USD
+2025-03-18 11:49:16,690 - INFO - Updated analysis for BTC/USD
+2025-03-18 11:49:21,433 - INFO - Updated analysis for ETH/USD
+2025-03-18 11:49:21,455 - INFO - Updated analysis for ETH/USD
+2025-03-18 11:49:26,153 - INFO - Updated analysis for ETH/BTC
+2025-03-18 11:49:26,169 - INFO - Updated analysis for ETH/BTC
+2025-03-18 11:49:26,225 - WARNING -  * Debugger is active!
+2025-03-18 11:49:26,235 - INFO -  * Debugger PIN: 930-477-289
+2025-03-18 11:49:28,756 - INFO - 127.0.0.1 - - [18/Mar/2025 11:49:28] "GET / HTTP/1.1" 200 -
+2025-03-18 11:49:29,195 - INFO - 127.0.0.1 - - [18/Mar/2025 11:49:29] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-03-18 11:51:22,591 - INFO - 127.0.0.1 - - [18/Mar/2025 11:51:22] "POST /api/dca-calculator HTTP/1.1" 200 -
+2025-03-18 11:54:15,844 - INFO - Updated analysis for BTC/USD
+2025-03-18 11:54:20,603 - INFO - Updated analysis for ETH/USD
+2025-03-18 11:54:25,358 - INFO - Updated analysis for ETH/BTC
+2025-03-18 11:54:30,970 - INFO - Updated analysis for BTC/USD
+2025-03-18 11:54:35,726 - INFO - Updated analysis for ETH/USD
+2025-03-18 11:54:40,482 - INFO - Updated analysis for ETH/BTC
+2025-03-18 11:59:30,137 - INFO - Updated analysis for BTC/USD
+2025-03-18 11:59:34,888 - INFO - Updated analysis for ETH/USD
+2025-03-18 11:59:39,670 - INFO - Updated analysis for ETH/BTC
+2025-03-18 11:59:45,236 - INFO - Updated analysis for BTC/USD
+2025-03-18 11:59:49,998 - INFO - Updated analysis for ETH/USD
+2025-03-18 11:59:54,756 - INFO - Updated analysis for ETH/BTC
+2025-03-18 12:04:44,430 - INFO - Updated analysis for BTC/USD
+2025-03-18 12:04:49,189 - INFO - Updated analysis for ETH/USD
+2025-03-18 12:04:53,955 - INFO - Updated analysis for ETH/BTC
+2025-03-18 12:04:59,503 - INFO - Updated analysis for BTC/USD
+2025-03-18 12:05:04,250 - INFO - Updated analysis for ETH/USD
+2025-03-18 12:05:09,003 - INFO - Updated analysis for ETH/BTC
+2025-03-23 02:04:31,697 - INFO - Updated analysis for BTC/USD
+2025-03-23 02:04:31,717 - INFO - Updated analysis for BTC/USD
+2025-03-23 02:04:36,456 - INFO - Updated analysis for ETH/USD
+2025-03-23 02:04:36,474 - INFO - Updated analysis for ETH/USD
+2025-03-23 02:04:41,216 - INFO - Updated analysis for ETH/BTC
+2025-03-23 02:04:41,227 - INFO - Updated analysis for ETH/BTC
+2025-03-23 02:04:41,487 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:10000
+ * Running on http://192.168.68.105:10000
+2025-03-23 02:04:41,487 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-23 02:04:41,489 - INFO -  * Restarting with stat
+2025-03-23 02:04:46,964 - INFO - Updated analysis for BTC/USD
+2025-03-23 02:04:47,023 - INFO - Updated analysis for BTC/USD
+2025-03-23 02:04:51,792 - INFO - Updated analysis for ETH/USD
+2025-03-23 02:04:51,797 - INFO - Updated analysis for ETH/USD
+2025-03-23 02:04:56,543 - INFO - Updated analysis for ETH/BTC
+2025-03-23 02:04:56,544 - INFO - Updated analysis for ETH/BTC
+2025-03-23 02:04:56,611 - WARNING -  * Debugger is active!
+2025-03-23 02:04:56,622 - INFO -  * Debugger PIN: 930-477-289
+2025-03-23 02:05:05,887 - INFO - 127.0.0.1 - - [23/Mar/2025 02:05:05] "GET / HTTP/1.1" 200 -
+2025-03-23 02:05:40,065 - INFO - 127.0.0.1 - - [23/Mar/2025 02:05:40] "POST /api/dca-calculator HTTP/1.1" 200 -
+2025-03-23 02:06:43,099 - INFO - 127.0.0.1 - - [23/Mar/2025 02:06:43] "POST /api/dca-calculator HTTP/1.1" 200 -
+2025-03-23 02:07:03,551 - INFO - 127.0.0.1 - - [23/Mar/2025 02:07:03] "POST /api/dca-calculator HTTP/1.1" 200 -
+2025-03-23 02:07:27,832 - INFO - 127.0.0.1 - - [23/Mar/2025 02:07:27] "POST /api/dca-calculator HTTP/1.1" 200 -

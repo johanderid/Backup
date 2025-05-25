@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microsoft Services Updates Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', path='/style.css') }}">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📢</text></svg>">
+</head>
+<body>
+    <div class="container mx-auto px-4 py-8">
+        <header class="header">
+            <h1 class="text-4xl font-bold mb-8 text-blue-600">Microsoft Services Updates Dashboard</h1>
+        </header>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {% for update in updates %}
+            <article class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow card">
+                <div class="flex items-start justify-between card-header">
+                    <span class="inline-block px-3 py-1 text-sm font-semibold text-blue-800 bg-blue-100 rounded-full source-tag">
+                        {{ update.source }}
+                    </span>
+                    <span class="text-sm text-gray-500 date">{{ update.date }}</span>
+                </div>
+                <h2 class="text-xl font-semibold mt-4 mb-2 card-title">{{ update.title }}</h2>
+                <p class="text-gray-600 mb-4 card-description">{{ update.description[:200] }}...</p>
+                <a href="{{ update.link }}" target="_blank" class="text-blue-600 hover:text-blue-800 font-medium read-more">
+                    Read more →
+                </a>
+            </article>
+            {% endfor %}
+        </div>
+    </div>
+
+    <script>
+        // Format dates
+        document.querySelectorAll('.date').forEach(dateElement => {
+            try {
+                const date = new Date(dateElement.textContent);
+                if (!isNaN(date)) {
+                    dateElement.textContent = date.toLocaleDateString('en-US', {
+                        year: 'numeric',
+                        month: 'long',
+                        day: 'numeric'
+                    });
+                }
+            } catch (e) {
+                // Keep original text if date parsing fails
+            }
+        });
+
+        // Auto-refresh the page every 30 minutes
+        setTimeout(() => {
+            window.location.reload();
+        }, 30 * 60 * 1000);
+    </script>
+</body>
+</html>

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intune Device Inventory</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.datatables.net/1.13.7/css/dataTables.bootstrap5.min.css" rel="stylesheet">
+    <style>
+        .device-card {
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .error-message {
+            color: #dc3545;
+            padding: 20px;
+            text-align: center;
+        }
+        .system-info {
+            margin-top: 10px;
+        }
+        .specs-table th {
+            width: 30%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid py-4">
+        <h1 class="text-center mb-4">Intune Device Inventory</h1>
+        
+        {% if error %}
+        <div class="error-message">
+            <h3>Error</h3>
+            <p>{{ error }}</p>
+        </div>
+        {% else %}
+        
+        <!-- Export Button -->
+        <div class="text-end mb-4">
+            <button id="exportBtn" class="btn btn-primary">
+                Export to JSON
+            </button>
+        </div>
+        
+        <!-- Devices Table -->
+        <div class="table-responsive">
+            <table id="devicesTable" class="table table-striped table-hover">
+                <thead>
+                    <tr>
+                        <th>Device Name</th>
+                        <th>OS</th>
+                        <th>Manufacturer</th>
+                        <th>Model</th>
+                        <th>Serial Number</th>
+                        <th>Last Sync</th>
+                        <th>Compliance</th>
+                        <th>Details</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for device in devices %}
+                    <tr>
+                        <td>{{ device.display_name }}</td>
+                        <td>{{ device.operating_system }} {{ device.os_version }}</td>
+                        <td>{{ device.manufacturer }}</td>
+                        <td>{{ device.model }}</td>
+                        <td>{{ device.serial_number }}</td>
+                        <td>{{ device.last_sync_time }}</td>
+                        <td>
+                            <span class="badge {% if device.compliance_state == 'compliant' %}bg-success{% else %}bg-warning{% endif %}">
+                                {{ device.compliance_state }}
+                            </span>
+                        </td>
+                        <td>
+                            <button class="btn btn-sm btn-info" data-bs-toggle="modal" 
+                                    data-bs-target="#deviceModal{{ loop.index }}">
+                                View Details
+                            </button>
+                        </td>
+                    </tr>
+                    
+                    <!-- Device Details Modal -->
+                    <div class="modal fade" id="deviceModal{{ loop.index }}" tabindex="-1">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">{{ device.display_name }} - Details</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <h6>System Information</h6>
+                                            <table class="table specs-table">
+                                                <tr>
+                                                    <th>OS</th>
+                                                    <td>{{ device.operating_system }} {{ device.os_version }}</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Manufacturer</th>
+                                                    <td>{{ device.manufacturer }}</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Model</th>
+                                                    <td>{{ device.model }}</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Serial Number</th>
+                                                    <td>{{ device.serial_number }}</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <h6>Processor & Memory</h6>
+                                            <table class="table specs-table">
+                                                <tr>
+                                                    <th>Processor</th>
+                                                    <td>{{ device.processor.name }}</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Architecture</th>
+                                                    <td>{{ device.processor.architecture }}</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Total RAM</th>
+                                                    <td>{{ device.memory.total_ram }}</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Free RAM</th>
+                                                    <td>{{ device.memory.free_ram }}</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="row mt-3">
+                                        <div class="col-md-6">
+                                            <h6>Storage</h6>
+                                            <table class="table specs-table">
+                                                <tr>
+                                                    <th>Total Storage</th>
+                                                    <td>{{ device.memory.total_storage }}</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Free Storage</th>
+                                                    <td>{{ device.memory.free_storage }}</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <h6>Network</h6>
+                                            <table class="table specs-table">
+                                                <tr>
+                                                    <th>IP Address</th>
+                                                    <td>{{ device.network.ip_address }}</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>WiFi MAC</th>
+                                                    <td>{{ device.network.wifi_mac }}</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Ethernet MAC</th>
+                                                    <td>{{ device.network.ethernet_mac }}</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="row mt-3">
+                                        <div class="col-12">
+                                            <h6>Management Information</h6>
+                                            <table class="table specs-table">
+                                                <tr>
+                                                    <th>Enrollment Date</th>
+                                                    <td>{{ device.enrollment_date }}</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Last Sync</th>
+                                                    <td>{{ device.last_sync_time }}</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Compliance State</th>
+                                                    <td>{{ device.compliance_state }}</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Management State</th>
+                                                    <td>{{ device.management_state }}</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        {% endif %}
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.7/js/dataTables.bootstrap5.min.js"></script>
+    
+    <script>
+        $(document).ready(function() {
+            // Initialize DataTable
+            $('#devicesTable').DataTable({
+                pageLength: 25,
+                order: [[0, 'asc']],
+                columns: [
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    null,
+                    { orderable: false }
+                ]
+            });
+            
+            // Export button handler
+            $('#exportBtn').click(function() {
+                fetch('/api/export')
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data.error) {
+                            alert('Export failed: ' + data.error);
+                        } else {
+                            alert('Device inventory exported successfully!');
+                        }
+                    })
+                    .catch(error => {
+                        alert('Export failed: ' + error);
+                    });
+            });
+        });
+    </script>
+</body>
+</html>
